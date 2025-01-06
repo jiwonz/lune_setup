@@ -14,7 +14,7 @@ bin = "bin.luau"
 default = "https://github.com/pesde-pkg/index"
 
 [dependencies]
-unzip = { repo = "0x5eal/luau-unzip", rev = "ecb63a0" }
+unzip = { repo = "0x5eal/luau-unzip", rev = "main" }
 dirs = { name = "jiwonz/dirs", version = "^0.2.0" }
 pathfs = { name = "jiwonz/pathfs", version = "^0.2.2" }
 
