@@ -2,7 +2,7 @@ local net = require("@lune/net")
 local serde = require("@lune/serde")
 local process = require("@lune/process")
 local stdio = require("@lune/stdio")
-local unzip = require("./luau_packages/.pesde/0x5eal+unzip/0.1.0/unzip/lib")
+local unzip = require("./luau_packages/unzip")
 local dirs = require("./lune_packages/dirs")
 local pathfs = require("./lune_packages/pathfs")
 
