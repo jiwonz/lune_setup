@@ -15,10 +15,13 @@ local DEFAULT_LUAURC_CONTENTS = [[{
 }
 ]]
 
-local luneVersion = (_VERSION :: string):match("%d+%.%d+%.%d+")
+local luneVersion = process.args[1]
 if not luneVersion then
-	stdio.ewrite("Failed to parse lune version\n")
-	return process.exit(1)
+	luneVersion = (_VERSION :: string):match("%d+%.%d+%.%d+")
+	if not luneVersion then
+		stdio.ewrite("Failed to parse lune version\n")
+		return process.exit(1)
+	end
 end
 
 -- Setup typedefs
@@ -94,3 +97,5 @@ end
 (luaurc.aliases :: any).lune = luaurcLuneTypedefs
 
 pathfs.writeFile(".luaurc", serde.encode("json", luaurc, true))
+
+print("Lune has now been set up and editor type definitions have been generated.")

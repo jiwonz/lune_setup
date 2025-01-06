@@ -1,5 +1,5 @@
 name = "jiwonz/lune_setup"
-version = "0.1.0"
+version = "0.2.0"
 description = "lune setup command written in luau but for newer luau-lsp"
 authors = ["jiwonz"]
 repository = "https://github.com/jiwonz/lune_setup"
