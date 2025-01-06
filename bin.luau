@@ -65,7 +65,7 @@ end
 
 for _, entry in reader:listDirectory(typedefs) do
 	local content = reader:extract(entry, {
-		isString = true
+		isString = true,
 	})
 	local lastComponent = pathfs.Path.from(entry.name):components():nextBack()
 	if not lastComponent then
@@ -85,7 +85,7 @@ if not pathfs.isFile(".luaurc") then
 end
 
 local luaurc: {
-	aliases: { [string]: string }?
+	aliases: { [string]: string }?,
 } = serde.decode("json", pathfs.readFile(".luaurc"))
 
 if not luaurc.aliases then

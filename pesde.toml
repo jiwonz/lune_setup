@@ -17,3 +17,9 @@ default = "https://github.com/pesde-pkg/index"
 unzip = { repo = "0x5eal/luau-unzip", rev = "ecb63a0" }
 dirs = { name = "jiwonz/dirs", version = "^0.2.0" }
 pathfs = { name = "jiwonz/pathfs", version = "^0.2.2" }
+
+[dev_dependencies]
+luau_check = { name = "jiwonz/luau_check", version = "^0.1.3" }
+luau_lsp = { name = "pesde/luau_lsp", version = "^1.38.0" }
+selene = { name = "pesde/selene", version = "^0.27.1" }
+stylua = { name = "pesde/stylua", version = "^2.0.2" }
