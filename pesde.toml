@@ -1,7 +1,7 @@
 name = "jiwonz/lune_setup"
 version = "0.2.2"
 description = "lune setup command written in luau but for newer luau-lsp"
-authors = ["jiwonz"]
+authors = ["jiwonz <me@jiwonz.kr>"]
 repository = "https://github.com/jiwonz/lune_setup"
 license = "MIT"
 includes = ["bin.luau", "pesde.toml", "README.md", "LICENSE"]
