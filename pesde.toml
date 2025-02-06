@@ -1,10 +1,10 @@
 name = "jiwonz/lune_setup"
-version = "0.2.1"
+version = "0.2.2"
 description = "lune setup command written in luau but for newer luau-lsp"
 authors = ["jiwonz"]
 repository = "https://github.com/jiwonz/lune_setup"
 license = "MIT"
-includes = ["bin.luau", ".luaurc", "pesde.toml", "README.md", "LICENSE.md"]
+includes = ["bin.luau", "pesde.toml", "README.md", "LICENSE"]
 
 [target]
 environment = "lune"
@@ -14,12 +14,9 @@ bin = "bin.luau"
 default = "https://github.com/pesde-pkg/index"
 
 [dependencies]
-dirs = { name = "jiwonz/dirs", version = "^0.2.0" }
-pathfs = { name = "jiwonz/pathfs", version = "^0.2.2" }
-unzip = { name = "0x5eal/unzip", version = "^0.0.1", target = "luau" }
+dirs = { name = "jiwonz/dirs", version = "^0.3.0" }
+pathfs = { name = "jiwonz/pathfs", version = "^0.5.2" }
+unzip = { name = "0x5eal/unzip", version = "^0.1.0", target = "luau" }
 
 [dev_dependencies]
-luau_check = { name = "jiwonz/luau_check", version = "^0.1.3" }
-luau_lsp = { name = "pesde/luau_lsp", version = "^1.38.0" }
-selene = { name = "pesde/selene", version = "^0.27.1" }
-stylua = { name = "pesde/stylua", version = "^2.0.2" }
+luau_check = { name = "jiwonz/luau_check", version = "^0.3.5" }
