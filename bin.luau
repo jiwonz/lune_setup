@@ -70,7 +70,7 @@ end
 
 for _, entry in reader:listDirectory(typedefs) do
 	local content = reader:extract(entry, {
-		isText = true
+		isText = true,
 	})
 	local stem = pathfs.Path.from(entry.name):fileStem()
 	if not stem then
