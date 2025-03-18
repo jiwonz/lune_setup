@@ -72,13 +72,13 @@ for _, entry in reader:listDirectory(typedefs) do
 	local content = reader:extract(entry, {
 		isText = true,
 	})
-	local stem = pathfs.Path.from(entry.name):fileStem()
-	if not stem then
-		stdio.ewrite(`{ERROR_PREFIX} Failed to get file stem of path: {entry.name}\n`)
+	local name = pathfs.Path.from(entry.name):fileName()
+	if not name then
+		stdio.ewrite(`{ERROR_PREFIX} Failed to get file name of path: {entry.name}\n`)
 		process.exit(1)
 		error("unreachable")
 	end
-	fs.writeFile(typedefsPath:join(stem), content)
+	fs.writeFile(typedefsPath:join(name), content)
 end
 
 -- Setup .luaurc
